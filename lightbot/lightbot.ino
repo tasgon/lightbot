@@ -21,7 +21,7 @@ void loop() {
   Serial.println(right);
   
   
-  if (abs(left - right) < 3){
+  if (abs(left - right) < variance){
     digitalWrite(LM, HIGH);
     digitalWrite(RM, HIGH);
     Serial.println("equal");
